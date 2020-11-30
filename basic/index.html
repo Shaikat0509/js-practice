@@ -15,9 +15,28 @@
         }
         sum(2,3);
         
+        // ES6
         const sum = (x,y) => (x+y);
         sum(2,3);
+        
+        
+        // Check if a letter is uppercase or lowercase
+        function checkCase(letter) {
+            if (letter == letter.toUpperCase()) {
+                console.log('Uppercase');
+            }
+            else {
+                console.log('lowercase');
+            }
+        }
+        checkCase("v");
+        
+        // ES6
+        const checkCase2 = (letter) => {
+            return (letter == letter.toUpperCase()) ? console.log('Uppercase') : console.log('Lowwercase')
+        }
 
+        checkCase2('S')
 
 
 
